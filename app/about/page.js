@@ -1,11 +1,11 @@
 
 
-export default function Home() {
+export default function About() {
   return (
     <main className="">
       <h1
         className='w-full p-10'
-      >Ian's New Portfolio</h1>
+      >About Page</h1>
     </main>
   )
 }
