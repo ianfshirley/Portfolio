@@ -1,11 +1,29 @@
+import Link from "next/link"
 
 
 export default function ContactLinks() {
   return (
     <div className="p-10">
-      <h1
-        className=''
-      >Contact Links Go Here</h1>
+      <nav className="rounded border-2">
+        <Link
+          href='/'
+          className="p-2"
+        >
+          Home
+        </Link>
+        <Link
+          href='/about'
+          className="p-2"
+        >
+          About
+        </Link>
+        <Link
+          href='/portfolio'
+          className="p-2"
+        >
+          Projects
+        </Link>
+      </nav>
     </div>
   )
 }
