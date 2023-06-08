@@ -5,24 +5,15 @@ export default function ContactLinks() {
   return (
     <div className="p-10">
       <nav className="rounded border-2">
-        <Link
-          href='/'
-          className="p-2"
-        >
-          Home
-        </Link>
-        <Link
-          href='/about'
-          className="p-2"
-        >
-          About
-        </Link>
-        <Link
-          href='/portfolio'
-          className="p-2"
-        >
-          Projects
-        </Link>
+        <a href='https://github.com/ianfshirley' target='_blank' rel='noopener noreferrer' className="p-2">
+          GitHub
+        </a>
+        <a href='https://www.linkedin.com/in/ianfshirley/' target='_blank' rel='noopener noreferrer' className="p-2">
+          LinkedIn
+        </a>
+        <a href='mailto:ianfshirley88@gmail.com' target='_blank' rel='noopener noreferrer' className="p-2">
+          Email
+        </a>
       </nav>
     </div>
   )
