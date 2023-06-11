@@ -1,12 +1,10 @@
-
+import Hero from "./components/Hero"
 
 
 export default function Home() {
   return (
     <main className="w-screen">
-      <h1
-        className='text-mist p-10'
-      >Ian's New Portfolio</h1>
+      <Hero />
     </main>
   )
 }

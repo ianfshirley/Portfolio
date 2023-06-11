@@ -1,5 +1,5 @@
 import NavBar from "./NavBar"
-import ContactLinks from "./ContactLinks"
+import ContactLinks from "../ContactLinks"
 
 
 export default function Header() {
