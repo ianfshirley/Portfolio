@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import ContactLinks from './components/Header/ContactLinks'
 
 
 export const metadata = {
@@ -14,9 +15,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel='icon' href='/favicon.ico' />
       </head>
-      <body className='w-screen min-h-screen  bg-[#191919] '>
+      <body className='w-screen bg-[#191919] '>
         <Header />
         {children}
+        <ContactLinks />
         <Footer />
       </body>
     </html>

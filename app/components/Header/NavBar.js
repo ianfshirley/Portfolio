@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function NavBar() {
   return (
     <div className="p-10 ">
-      <nav className="rounded border-2 bg-army">
+      <nav className="rounded border-2 bg-fog border-mist-50">
         <Link
           href='/'
           className="p-2"
