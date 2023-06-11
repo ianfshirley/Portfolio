@@ -6,7 +6,7 @@ import { faEnvelope as faEnvelopeSolid } from '@fortawesome/free-solid-svg-icons
 export default function ContactLinks() {
   return (
     <div className="p-10">
-      <nav className="rounded border-2  flex flex-row">
+      <nav className="rounded border-2 flex flex-row bg-[#a1b1a4]">
         <a href='https://github.com/ianfshirley' target='_blank' rel='noopener noreferrer' className="p-2">
           <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
         </a>

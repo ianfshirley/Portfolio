@@ -1,7 +1,6 @@
 import './globals.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Image from 'next/image'
 
 
 export const metadata = {
@@ -15,13 +14,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel='icon' href='/favicon.ico' />
       </head>
-      <body className='absolute overflow-hidden w-screen min-h-screen'>
-        <Image 
-          src='/img/textured.jpg'
-          alt='textured black background'
-          fill={true}
-          className='object-cover'
-        />
+      <body className='w-screen min-h-screen  bg-[#191919] '>
         <Header />
         {children}
         <Footer />
