@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import ContactLinks from './components/ContactLinks'
 
 
+
 export const metadata = {
   title: 'Ian F. Shirley: Full-Stack Developer',
   description: 'Developer Portfolio for Ian F. Shirley',
