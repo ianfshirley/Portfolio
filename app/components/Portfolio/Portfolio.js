@@ -2,7 +2,7 @@
 
 export default function Portfolio() {
   return (
-    <main id='portfolio' className="m-20 bg-fog flex justify-center">
+    <main className="bg-fog flex justify-center m-24">
       <h1
         className='p-10'
       >Portfolio Page</h1>

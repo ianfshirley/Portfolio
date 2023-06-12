@@ -3,7 +3,7 @@
 
 export default function About() {
   return (
-    <div id='about' className=" m-20 bg-army flex justify-center border-2 border-peach ">
+    <div className="m-24 bg-army flex justify-center border-2 border-peach ">
       <h1
         className='p-10'
       >About Page</h1>
