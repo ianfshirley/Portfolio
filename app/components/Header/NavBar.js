@@ -12,16 +12,16 @@ export default function NavBar() {
           Home
         </Link>
         <Link
-          href='#about'
-          className="p-2 text-white hover:text-peach-500"
-        >
-          About
-        </Link>
-        <Link
           href='#portfolio'
           className="p-2 text-white hover:text-peach-500"
         >
           Projects
+        </Link>
+        <Link
+          href='#about'
+          className="p-2 text-white hover:text-peach-500"
+        >
+          About
         </Link>
       </nav>
     </div>
