@@ -12,9 +12,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel='icon' href='/favicon.ico' />
-      </head>
       <body className='w-screen bg-[#191919] absolute'>
         <Header />
         {children}

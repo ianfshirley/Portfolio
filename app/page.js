@@ -1,7 +1,6 @@
 import Hero from "./components/Hero"
-import About from "./about/page"
-import Portfolio from "./portfolio/page"
-
+import About from "./components/About/About"
+import Portfolio from "./components/Portfolio/Portfolio"
 
 export default function Home() {
   return (
