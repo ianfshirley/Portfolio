@@ -8,12 +8,12 @@ export default function Home() {
       <Hero />
       <div
         id='portfolio'
-        className="h-24"
+        className="h-12"
       ></div>
       <Portfolio />
       <div
         id='about'
-        className="h-24"
+        className="h-12"
       ></div>
       <About />
     </main>
