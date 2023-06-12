@@ -18,7 +18,7 @@ export default function ContactLinks() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 mx-4 mt-20">
+    <div className="fixed bottom-0 left-0 ml-4 mr-8 mt-20">
       <nav
         className="flex flex-col"
         onMouseEnter={handleHover}
