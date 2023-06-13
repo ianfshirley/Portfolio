@@ -12,7 +12,7 @@ export default function Hero() {
           <h3 className="mb-3 text-2xl font-medium text-army sm:text-5xl">Headline goes here</h3>
           <p className="max-w-md mt-5 mb-1 text-lg text-mist sm:text-xl">Summary goes here. Some stuff about what I'm doing, what I excel at and/or what I like. Bla bla lorem impsum whatever bs they always have in these things</p>
         </div>
-        <div className="w-[400px] h-[400px] bg-army rounded-xl">
+        <div className="w-[400px] bg-army rounded-xl">
           <Image
             src='/img/me.jpg'
             alt='Profile Pic'
