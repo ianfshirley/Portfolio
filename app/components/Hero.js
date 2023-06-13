@@ -12,7 +12,7 @@ export default function Hero() {
           <h3 className="mb-3 text-2xl font-medium text-army sm:text-5xl">Headline goes here</h3>
           <p className="max-w-md mt-5 mb-1 text-lg text-mist sm:text-xl text-justify">Summary goes here. Some stuff about what I'm doing, what I excel at and/or what I like. Bla bla lorem impsum whatever bs they always have in these things</p>
         </div>
-        <div className="flex flex-wrap justify-evenly bg-fog rounded-xl">
+        <div className="grid grid-cols-5">
           <div className="flex flex-col items-center p-4">
             <Image
               src='/img/placeholder_square.png'
@@ -20,7 +20,6 @@ export default function Hero() {
               width={40}
               height={40}
             />
-            <p>Project Info</p>
           </div>
           <div className="flex flex-col items-center p-4">
             <Image
@@ -29,7 +28,6 @@ export default function Hero() {
               width={40}
               height={40}
             />
-            <p>Project Info</p>
           </div>
           <div className="flex flex-col items-center p-4">
             <Image
@@ -38,7 +36,6 @@ export default function Hero() {
               width={40}
               height={40}
             />
-            <p>Project Info</p>
           </div>
           <div className="flex flex-col items-center p-4">
             <Image
@@ -47,7 +44,62 @@ export default function Hero() {
               width={40}
               height={40}
             />
-            <p>Project Info</p>
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <Image
+              src='/img/placeholder_square.png'
+              alt='skill placeholder'
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <Image
+              src='/img/placeholder_square.png'
+              alt='skill placeholder'
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <Image
+              src='/img/placeholder_square.png'
+              alt='skill placeholder'
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <Image
+              src='/img/placeholder_square.png'
+              alt='skill placeholder'
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <Image
+              src='/img/placeholder_square.png'
+              alt='skill placeholder'
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <Image
+              src='/img/placeholder_square.png'
+              alt='skill placeholder'
+              width={40}
+              height={40}
+            />
+          </div>
+          <div className="flex flex-col items-center p-4">
+            <Image
+              src='/img/placeholder_square.png'
+              alt='skill placeholder'
+              width={40}
+              height={40}
+            />
           </div>
         </div>
       </div>
