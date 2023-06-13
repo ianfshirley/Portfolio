@@ -27,6 +27,14 @@ const devicons = [
     "class": "devicon-django-plain",
   },
   {
+    "name": "CSS",
+    "class": "devicon-css3-plain colored"
+  },
+  {
+    "name": "Tailwind CSS",
+    "class": "devicon-tailwindcss-plain colored"
+  },
+  {
     "name": "MongoDB",
     "class": "devicon-mongodb-plain colored",
   },
@@ -46,7 +54,7 @@ const devicons = [
 
 export default function Skills() {
   return (
-    <div id='skills' className="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6">
+    <div id='skills' className="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6 text-mist-50">
       {devicons.map((devicon) => (
         <div key={devicon.name} className="flex flex-col items-center justify-center px-2 text-4xl sm:text-6xl">
           <div className="flex flex-col items-center justify-center">
