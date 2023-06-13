@@ -5,11 +5,11 @@ import profilePic from 'public/img/me.jpg'
 export default function About() {
   return (
     <div className="m-8 md:m-24 flex flex-col md:flex-row justify-center items-center">
-      <div className="max-w-xs md:max-w-md">
+      <div className="max-w-xs md:max-w-md bg-gradient-to-br from-peach-500 to-peach rounded-3xl">
         <Image
           src={profilePic}
           alt='A picture of Ian'
-          className="rounded-md shadow-xl shadow-peach"
+          className="rounded-full  p-6"
         />
       </div>
       <div className="flex flex-col justify-center">
