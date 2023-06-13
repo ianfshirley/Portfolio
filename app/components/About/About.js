@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="m-8 md:m-24 flex flex-col md:flex-row justify-center items-center">
 
-      <div className="max-w-sm md:max-w-md">
+      <div className="max-w-xs md:max-w-md">
         <Image
           src={profilePic}
           alt='A picture of Ian'
