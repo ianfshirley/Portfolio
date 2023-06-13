@@ -10,7 +10,7 @@ export default function About() {
         <Image
           src={profilePic}
           alt='A picture of Ian'
-          className="rounded-md shadow md:shadow-lg shadow-peach"
+          className="rounded-md shadow md:shadow-xl shadow-peach"
         />
       </div>
       <div className="flex flex-col justify-center">

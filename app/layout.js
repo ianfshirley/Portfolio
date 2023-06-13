@@ -8,6 +8,13 @@ import ContactLinks from './components/ContactLinks'
 export const metadata = {
   title: 'Ian F. Shirley: Full-Stack Developer',
   description: 'Developer Portfolio for Ian F. Shirley',
+  viewport: {
+    width: "device-width",
+    height: "device-height",
+    initialScale: 1,
+    maximumScale: 1,
+    minimumScale: 1,
+  }
 }
 
 export default function RootLayout({ children }) {
