@@ -1,24 +1,23 @@
 import Image from "next/image"
+import profilePic from 'public/img/me.jpg'
 
 
 export default function About() {
   return (
-    <div className="m-24 text-center ">
+    <div className="m-8 md:m-24 flex flex-col md:flex-row justify-center items-center">
 
-      <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      <div className="max-w-sm md:max-w-md">
         <Image
-            src='/img/me.jpg'
-            alt='Me'
-            width={400}
-            height={400}
-            className="object-cover h-full rounded-t-lg    md:rounded-none md:rounded-l-lg"
+          src={profilePic}
+          alt='A picture of Ian'
+          className="rounded-md shadow md:shadow-lg shadow-peach"
         />
-        <div className="flex flex-col justify-between p-4 leading-normal">
-          <h1 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A little about me.</h1>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+      </div>
+      <div className="flex flex-col justify-center">
+        <h5 className="text-army text-2xl p-5 text-center">a little about me</h5>
+        <p className="pl-20 pr-10 pt-5 pb-10 -ml-10 text-justify max-w-2xl  rounded-r-lg text-mist-50">
           I'm a full-stack software developer, I love creating clean and efficient backends and then designing and creating beautiful and user-friendly UIs. I have a history in sales and fraud investigation which contributed to these skills etc. Add some stuff from professional pitch about my soft skills and reason for becoming software developer. Then a little fun stuff: personal history, work experience, hobbies n stuff.
-          </p>
-        </div>
+        </p>
       </div>
 
       {/* <h1 className="text-mist text-2xl p-5">A little about me.</h1>
@@ -27,8 +26,9 @@ export default function About() {
           <Image
             src='/img/me.jpg'
             alt='Me'
-            fill={true}
-            className=""
+            width={300}
+            height={300}
+            className="p-4"
             // style={{ width: '100%', height: 'auto' }}
           />
         </div>
@@ -36,6 +36,8 @@ export default function About() {
           I'm a full-stack software developer, I love creating clean and efficient backends and then designing and creating beautiful and user-friendly UIs. I have a history in sales and fraud investigation which contributed to these skills etc. Add some stuff from professional pitch about my soft skills and reason for becoming software developer. Then a little fun stuff: personal history, work experience, hobbies n stuff.
         </p>
       </div> */}
+
+
     </div>
   )
 }
