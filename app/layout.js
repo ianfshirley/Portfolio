@@ -8,18 +8,14 @@ import ContactLinks from './components/ContactLinks'
 export const metadata = {
   title: 'Ian F. Shirley: Full-Stack Developer',
   description: 'Developer Portfolio for Ian F. Shirley',
-  viewport: {
-    width: "device-width",
-    height: "device-height",
-    initialScale: 1,
-    maximumScale: 1,
-    minimumScale: 1,
-  }
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+      </head>
       <body className='w-screen bg-[#191919] absolute'>
         <Header />
         {children}

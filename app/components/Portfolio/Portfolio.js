@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Portfolio() {
   return (
-    <main className="bg-fog m-8 md:m-24 flex flex-col md:flex-row justify-center items-center">
+    <div className="bg-fog m-8 md:m-24 flex flex-col md:flex-row justify-center items-center">
       <h1
         className='p-10'
       >Projects</h1>
@@ -49,6 +49,6 @@ export default function Portfolio() {
             <p>Project Info</p>
           </div>
         </div>
-    </main>
+    </div>
   )
 }
