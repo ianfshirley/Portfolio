@@ -33,7 +33,7 @@ const projects = [
         "name": "HTML"
       },
       {
-        "class": "devicon-css3-original",
+        "class": "devicon-css3-plain",
         "name": "CSS"
       },
     ]
@@ -54,10 +54,12 @@ export default function Portfolio() {
         className='p-10 text-army text-5xl'
       >some recent projects</h1>
 
-      <div className="bg-fog grid grid-cols-3 gap-4">
+      <div className="bg-fog grid grid-cols-3 gap-12">
         {projects.map((project) => (
           <div key={project} className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src={project.image} alt="JobHuntHQ screenshot" /></figure>
+            <figure>
+              <img src={project.image} alt="JobHuntHQ screenshot" />
+            </figure>
             <div className="card-body text-center">
               <h2 className="card-title mx-auto">{project.title}</h2>
               <div className="project-skills justify-evenly">
