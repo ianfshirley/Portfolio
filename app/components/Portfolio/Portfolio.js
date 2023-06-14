@@ -20,6 +20,24 @@ const projects = [
       },
     ]
   },
+  {
+    "title": "Target Practice",
+    "image": "/img/target-practice-home.png",
+    "skills": [
+      {
+        "class": "devicon-javascript-plain",
+        "name": "JavaScript"
+      },
+      {
+        "class": "devicon-html5-plain",
+        "name": "HTML"
+      },
+      {
+        "class": "devicon-css3-original",
+        "name": "CSS"
+      },
+    ]
+  },
 ]
 
 
@@ -36,7 +54,7 @@ export default function Portfolio() {
         className='p-10 text-army text-5xl'
       >some recent projects</h1>
 
-      <div className="bg-fog ">
+      <div className="bg-fog grid grid-cols-3 gap-4">
         {projects.map((project) => (
           <div key={project} className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img src={project.image} alt="JobHuntHQ screenshot" /></figure>
