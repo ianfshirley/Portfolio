@@ -18,6 +18,10 @@ const projects = [
         "class": "devicon-nextjs-original",
         "name": "Next.js"
       },
+      {
+        "class": "devicon-tailwindcss-plain",
+        "name": "Tailwind CSS"
+      },
     ]
   },
   {
@@ -40,19 +44,19 @@ const projects = [
   },
   {
     "title": "5 O'Clock Somewhere",
-    "image": "/img/target-practice-home.png",
+    "image": "/img/1024px-Tiki-Cocktails.jpg",
     "skills": [
       {
         "class": "devicon-javascript-plain",
         "name": "JavaScript"
       },
       {
-        "class": "devicon-react-plain colored",
+        "class": "devicon-react-plain",
         "name": "React"
       },
       {
-        "class": "devicon-css3-plain",
-        "name": "CSS"
+        "class": "devicon-bootstrap-plain",
+        "name": "bootstrap"
       },
     ]
   },
