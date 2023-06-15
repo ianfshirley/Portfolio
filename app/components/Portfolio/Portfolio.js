@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-
+// add urls (live site & github repo), year, create gif, and finish adding icons
 const projects = [
   {
     "title": "JobHuntHQ",
@@ -68,40 +68,37 @@ export default function Portfolio() {
 
 
   return (
-    <div className=" m-8 md:m-24 flex flex-col md:flex-row justify-center items-center">
+    <div  className=" m-8 md:m-24 flex flex-col justify-center items-center">
       {/* -make a grid layout for the projects (or flex wrap)
           -just a gif, the title, and the skill icons
           -when you click on one, it opens a carousel with a description of the project and links to the github repo(s) and live site */}
-      <h1
-        className='p-10 text-army text-5xl'
-      >some recent projects</h1>
 
-      <div className="bg-fog grid grid-cols-3 gap-12">
+      <div>
+        <h1
+          className='p-10 text-mist text-5xl'
+        >Projects</h1>
+      </div>
+
+      <div className=" bg-mist flex flex-col justify-center items-center md:flex-row rounded-lg shadow-md shadow-peach">
+
         {projects.map((project) => (
-          <div key={project} className="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src={project.image} alt={`Screenshot of ${project.title}`} />
-            </figure>
-            <div className="card-body text-center">
-              <h2 className="card-title mx-auto">{project.title}</h2>
-              <div className="project-skills justify-evenly">
-                <div className="flex flex-wrap justify-center px-6 pt-4 pb-2">
-                  {project.skills.map((skill) => (
-                    <span key={skill.name} className="inline-block px-4 py-4 mx-1 my-1 text-2xl font-semibold text-gray-800 bg-gray-200 rounded-full sm:text-4xl">
-                      <div key={skill.name} className="flex flex-col items-center justify-center px-2 text-lg sm:text-xl">
-                        <i className={`${skill.class} text-2xl sm:text-4xl`}></i>
-                        <div className="justify-center">
-                          <p className="mt-0 text-gray-800">{skill.name}</p>
-                        </div>
-                      </div>
-                    </span>
-                  ))}
-                </div>
-              </div>
+
+          <div key={project} className="flex flex-col max-w-sm bg-fog border-2 border-fog-400 rounded-lg shadow-md shadow-fog m-6 text-[#191919]">
+            <a href="#">
+              <img className="rounded-t-lg" src={project.image} alt={`Screenshot of ${project.title}`} />
+            </a>
+            <div className="p-5 flex items-center flex-col">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-center">{project.title}</h5>
+              </a>
+              <p className="mb-3 font-normal">Brief project description.</p>
             </div>
           </div>
+
         ))}
+
       </div>
+
     </div>
   )
 }
