@@ -38,6 +38,24 @@ const projects = [
       },
     ]
   },
+  {
+    "title": "5 O'Clock Somewhere",
+    "image": "/img/target-practice-home.png",
+    "skills": [
+      {
+        "class": "devicon-javascript-plain",
+        "name": "JavaScript"
+      },
+      {
+        "class": "devicon-react-plain colored",
+        "name": "React"
+      },
+      {
+        "class": "devicon-css3-plain",
+        "name": "CSS"
+      },
+    ]
+  },
 ]
 
 
@@ -58,7 +76,7 @@ export default function Portfolio() {
         {projects.map((project) => (
           <div key={project} className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure>
-              <img src={project.image} alt="JobHuntHQ screenshot" />
+              <img src={project.image} alt={`Screenshot of ${project.title}`} />
             </figure>
             <div className="card-body text-center">
               <h2 className="card-title mx-auto">{project.title}</h2>
@@ -80,19 +98,6 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-
-
-      {/* <div className="card card-compact w-96 bg-base-100 shadow-xl">
-        <figure><img src="/img/JobHuntHQ-landing-page.png" alt="JobHuntHQ screenshot" /></figure>
-        <div className="card-body text-center">
-          <h2 className="card-title mx-auto">Project Title</h2>
-          <div className="project-skills justify-evenly">
-            <ul>
-              {skills.map()}
-            </ul>
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }
