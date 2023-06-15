@@ -75,15 +75,15 @@ export default function Portfolio() {
 
       <div>
         <h1
-          className='p-10 text-mist text-5xl'
+          className='p-10 text-fog text-5xl text-shadow-sm shadow-peach'
         >Projects</h1>
       </div>
 
-      <div className=" bg-mist flex flex-col justify-center items-center md:flex-row rounded-lg shadow-md shadow-peach">
+      <div className=" bg-fog flex flex-col justify-center items-center md:flex-row rounded-lg shadow-lg shadow-army">
 
         {projects.map((project) => (
 
-          <div key={project} className="flex flex-col max-w-sm bg-fog border-2 border-fog-400 rounded-lg shadow-md shadow-fog m-6 text-[#191919]">
+          <div key={project} className="flex flex-col max-w-sm bg-mist border-2 border-fog-400 rounded-lg shadow-md shadow-fog m-6 text-[#191919]">
             <a href="#">
               <img className="rounded-t-lg" src={project.image} alt={`Screenshot of ${project.title}`} />
             </a>

@@ -1,4 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
+
+const plugin = require('tailwindcss/plugin')
+
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -74,7 +79,24 @@ module.exports = {
           '950': '#141a16',
         },
       },
+      textShadow: {
+        sm: '1px 1px 1px var(--tw-shadow-color)',
+        DEFAULT: '2px 2px 2px var(--tw-shadow-color)',
+        lg: '8px 8px 16px var(--tw-shadow-color)',
+      }
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('daisyui'),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 }
