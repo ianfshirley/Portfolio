@@ -4,7 +4,9 @@ import Image from "next/image"
 const projects = [
   {
     "title": "JobHuntHQ",
-    "image": "/img/JobHuntHQ-landing-page.png",
+    "images": [
+      "/img/JobHuntHQ-landing-page.png",
+    ],
     "skills": [
       {
         "class": "devicon-python-plain",
@@ -26,7 +28,9 @@ const projects = [
   },
   {
     "title": "Target Practice",
-    "image": "/img/target-practice-home.png",
+    "images": [
+      "/img/target-practice-home.png",
+    ],
     "skills": [
       {
         "class": "devicon-javascript-plain",
@@ -39,24 +43,6 @@ const projects = [
       {
         "class": "devicon-css3-plain",
         "name": "CSS"
-      },
-    ]
-  },
-  {
-    "title": "5 O'Clock Somewhere",
-    "image": "/img/1024px-Tiki-Cocktails.jpg",
-    "skills": [
-      {
-        "class": "devicon-javascript-plain",
-        "name": "JavaScript"
-      },
-      {
-        "class": "devicon-react-plain",
-        "name": "React"
-      },
-      {
-        "class": "devicon-bootstrap-plain",
-        "name": "bootstrap"
       },
     ]
   },

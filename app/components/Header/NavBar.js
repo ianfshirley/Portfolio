@@ -13,13 +13,13 @@ export default function NavBar() {
         </Link>
         <Link
           href='#portfolio'
-          className="p-2 text-white hover:text-peach-500"
+          className="p-2 text-white hover:text-peach-500 hover:text-lg"
         >
           Projects
         </Link>
         <Link
           href='#about'
-          className="p-2 text-white hover:text-peach-500"
+          className="p-2 text-white hover:text-peach-500 hover:text-lg"
         >
           About
         </Link>

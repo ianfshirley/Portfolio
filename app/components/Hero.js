@@ -13,7 +13,7 @@ export default function Hero() {
           <h5 className="mb-3 text-lg font-medium text-army sm:text-2xl">
             & UI Designer
           </h5>
-          <p className="max-w-md mt-5 mb-5 text-lg text-peach sm:text-xl ">I have no fucking clue what to write here. Nothing seems right.</p>
+          {/* <p className="max-w-md mt-5 mb-5 text-lg text-peach sm:text-xl "></p> */}
         </div>
         <Skills />
       </div>
