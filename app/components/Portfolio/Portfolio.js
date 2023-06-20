@@ -5,8 +5,11 @@ const projects = [
   {
     "title": "JobHuntHQ",
     "images": [
+      "/img/JobHuntHQ.gif",
       "/img/JobHuntHQ-landing-page.png",
     ],
+    "summary": "Helps users keep track of their job search.",
+    "description": "",
     "skills": [
       {
         "class": "devicon-python-plain",
@@ -31,6 +34,8 @@ const projects = [
     "images": [
       "/img/target-practice-home.png",
     ],
+    "summary": "A retro computer game.",
+    "description": "",
     "skills": [
       {
         "class": "devicon-javascript-plain",
@@ -49,12 +54,14 @@ const projects = [
 ]
 
 
+
+
 export default function Portfolio() {
 
 
 
   return (
-    <div id='portfolio'  className="mt-12 mb-8 mx-8 md:mx-24 flex flex-col justify-center items-center">
+    <div id='portfolio' className="mt-12 mb-8 mx-8 md:mx-24 flex flex-col justify-center items-center">
       {/* -make a grid layout for the projects (or flex wrap)
           -just a gif, the title, and the skill icons
           -when you click on one, it opens a carousel with a description of the project and links to the github repo(s) and live site */}
@@ -71,13 +78,13 @@ export default function Portfolio() {
 
           <div key={project} className="flex flex-col max-w-sm bg-mist border-2 border-fog-400 rounded-lg shadow-md shadow-fog m-6 text-[#191919]">
             <a href="#">
-              <img className="rounded-t-lg" src={project.image} alt={`Screenshot of ${project.title}`} />
+              <img className="rounded-t-lg" src={project.images[0]} alt={`Screenshot of ${project.title}`} />
             </a>
             <div className="p-5 flex items-center flex-col">
               <a href="#">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-center">{project.title}</h5>
               </a>
-              <p className="mb-3 font-normal">Brief project description.</p>
+              <p className="mb-3 font-normal">{project.summary}</p>
             </div>
           </div>
 
@@ -88,3 +95,5 @@ export default function Portfolio() {
     </div>
   )
 }
+
+
