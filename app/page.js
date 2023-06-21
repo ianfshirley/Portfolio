@@ -8,7 +8,7 @@ export default function Home() {
       <Hero />
       <div
         id='portfolio'
-        className="h-12"
+        className="h-0 sm:h-12"
       ></div>
       <Portfolio />
       <div

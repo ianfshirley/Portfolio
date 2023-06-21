@@ -8,8 +8,7 @@ const projects = [
       "/img/JobHuntHQ.gif",
       "/img/JobHuntHQ-landing-page.png",
     ],
-    "summary": "Helps users keep track of their job search.",
-    "description": "",
+    "description": "JobHuntHQ is a web application designed to help users organize and track their job search journey in a simple, efficient, and user-friendly manner. Users can add jobs they have applied for, and update as they move through the hiring process.",
     "skills": [
       {
         "class": "devicon-python-plain",
@@ -34,8 +33,7 @@ const projects = [
     "images": [
       "/img/target-practice-home.png",
     ],
-    "summary": "A retro computer game.",
-    "description": "",
+    "description": "Target Practice is a retro computer game based on Nintendo's classic \"Duck Hunt\", where users try to shoot down birds that fly across the screen, and scores are tracked on the leaderboard.",
     "skills": [
       {
         "class": "devicon-javascript-plain",
@@ -62,9 +60,6 @@ export default function Portfolio() {
 
   return (
     <div  className="mt-12 mb-8 mr-8 ml-10 md:mx-24 flex flex-col justify-center items-center">
-      {/* -make a grid layout for the projects (or flex wrap)
-          -just a gif, the title, and the skill icons
-          -when you click on one, it opens a carousel with a description of the project and links to the github repo(s) and live site */}
 
       <div>
         <h1
@@ -72,11 +67,11 @@ export default function Portfolio() {
         >Projects</h1>
       </div>
 
-      <div className=" bg-fog flex flex-col justify-center items-center md:flex-row rounded-lg shadow-lg shadow-army">
+      <div className=" bg-mist flex flex-col justify-center items-center md:flex-row rounded-lg">
 
         {projects.map((project) => (
 
-          <div key={project} className="flex flex-col max-w-sm bg-mist border-2 border-fog-400 rounded-lg shadow-md shadow-fog m-6 text-[#191919]">
+          <div key={project} className="flex flex-col max-w-sm bg-fog  rounded-lg shadow-lg shadow-fog-400 m-6 text-[#191919]">
             <a href="#">
               <img className="rounded-t-lg" src={project.images[0]} alt={`Screenshot of ${project.title}`} />
             </a>
@@ -84,7 +79,7 @@ export default function Portfolio() {
               <a href="#">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-center">{project.title}</h5>
               </a>
-              <p className="mb-3 font-normal">{project.summary}</p>
+              <p className="mb-3 font-normal">{project.description}</p>
             </div>
           </div>
 
