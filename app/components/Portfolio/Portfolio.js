@@ -11,7 +11,7 @@ const projects = [
     "github": "https://github.com/ianfshirley/JobHuntHQ",
     "website": "https://job-hunt-hq.vercel.app/",
     "description": "JobHuntHQ is a web application designed to help users organize and track their job search journey in a simple, efficient, and user-friendly manner. Users can add jobs they have applied for, and update as they move through the hiring process.",
-    "skills": [
+    "technologies": [
       {
         "class": "devicon-python-plain",
         "name": "Python"
@@ -38,7 +38,7 @@ const projects = [
     "github": "https://github.com/CF201-Team-Black/target-practice",
     "website": "https://cf201-team-black.github.io/target-practice/",
     "description": "Target Practice is a retro computer game based on Nintendo's classic \"Duck Hunt\", where users try to shoot down birds that fly across the screen, and scores are tracked on the leaderboard.",
-    "skills": [
+    "technologies": [
       {
         "class": "devicon-javascript-plain",
         "name": "JavaScript"
@@ -91,6 +91,18 @@ export default function Portfolio() {
                 </a>
               </div>
               <p className="mb-3 font-normal">{project.description}</p>
+              <div className="flex flex-wrap justify-center px-6 pt-4 pb-2">
+                {project.technologies.map((tech) => (
+                  <span key={tech.name} className="inline-block px-4 py-4 mx-1 my-1 text-2xl font-semibold text-gray-800 bg-gray-200 rounded-full sm:text-4xl">
+                    <div key={tech.name} className="flex flex-col items-center justify-center px-2 text-lg sm:text-xl">
+                      <i className={`${tech.class} text-2xl sm:text-4xl`}></i>
+                      <div className="justify-center">
+                        <p className="mt-0 text-gray-800">{tech.name}</p>
+                      </div>
+                    </div>
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
