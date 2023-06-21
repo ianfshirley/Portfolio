@@ -21,6 +21,10 @@ const projects = [
         "name": "Django"
       },
       {
+        "class": "devicon-javascript-plain",
+        "name": "JavaScript"
+      },
+      {
         "class": "devicon-nextjs-original",
         "name": "Next.js"
       },
@@ -93,11 +97,11 @@ export default function Portfolio() {
               <p className="mb-3 font-normal">{project.description}</p>
               <div className="flex flex-wrap justify-center px-6 pt-4 pb-2">
                 {project.technologies.map((tech) => (
-                  <span key={tech.name} className="inline-block px-4 py-4 mx-1 my-1 text-2xl font-semibold text-gray-800 bg-gray-200 rounded-full sm:text-4xl">
-                    <div key={tech.name} className="flex flex-col items-center justify-center px-2 text-lg sm:text-xl">
+                  <span key={tech.name} className="inline-block p-3 m-1 font-semibold text-fog bg-mist shadow-md shadow-fog-400 rounded-full text-md sm:text-lg">
+                    <div key={tech.name} className="flex flex-col items-center justify-center px-2">
                       <i className={`${tech.class} text-2xl sm:text-4xl`}></i>
                       <div className="justify-center">
-                        <p className="mt-0 text-gray-800">{tech.name}</p>
+                        <p className="mt-0">{tech.name}</p>
                       </div>
                     </div>
                   </span>
