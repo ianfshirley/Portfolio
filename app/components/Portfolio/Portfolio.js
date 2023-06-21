@@ -61,7 +61,7 @@ export default function Portfolio() {
 
 
   return (
-    <div id='portfolio' className="mt-12 mb-8 mx-8 md:mx-24 flex flex-col justify-center items-center">
+    <div  className="mt-12 mb-8 mr-8 ml-10 md:mx-24 flex flex-col justify-center items-center">
       {/* -make a grid layout for the projects (or flex wrap)
           -just a gif, the title, and the skill icons
           -when you click on one, it opens a carousel with a description of the project and links to the github repo(s) and live site */}

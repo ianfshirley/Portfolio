@@ -6,10 +6,13 @@ export default function Home() {
   return (
     <main className="w-screen">
       <Hero />
-
+      <div
+        id='portfolio'
+        className="h-12"
+      ></div>
       <Portfolio />
       <div
-        id='about'
+        
         className="h-12"
       ></div>
       <About />

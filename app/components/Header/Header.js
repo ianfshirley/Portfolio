@@ -32,7 +32,7 @@ export default function Header() {
   const scrollDirection = useScrollDirection();
 
   return (
-    <div className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} h-24 w-screen flex flex-row justify-between transition-all duration-500 bg-[#191919]`}>
+    <div className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} z-20 h-24 w-screen flex flex-row justify-between transition-all duration-500 bg-[#191919]`}>
       <h1
         className='p-10 text-peach-500 text-xl'
       >Ian F. Shirley</h1>
