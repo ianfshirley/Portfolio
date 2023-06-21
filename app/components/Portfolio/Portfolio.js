@@ -8,6 +8,8 @@ const projects = [
       "/img/JobHuntHQ.gif",
       "/img/JobHuntHQ-landing-page.png",
     ],
+    "github": "https://github.com/ianfshirley/JobHuntHQ",
+    "website": "https://job-hunt-hq.vercel.app/",
     "description": "JobHuntHQ is a web application designed to help users organize and track their job search journey in a simple, efficient, and user-friendly manner. Users can add jobs they have applied for, and update as they move through the hiring process.",
     "skills": [
       {
@@ -33,6 +35,8 @@ const projects = [
     "images": [
       "/img/target-practice-home.png",
     ],
+    "github": "https://github.com/CF201-Team-Black/target-practice",
+    "website": "https://cf201-team-black.github.io/target-practice/",
     "description": "Target Practice is a retro computer game based on Nintendo's classic \"Duck Hunt\", where users try to shoot down birds that fly across the screen, and scores are tracked on the leaderboard.",
     "skills": [
       {
