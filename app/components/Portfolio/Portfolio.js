@@ -63,7 +63,7 @@ export default function Portfolio() {
 
 
   return (
-    <div  className="mt-12 mb-8 mr-8 ml-10 md:mx-24 flex flex-col justify-center items-center">
+    <div className="mt-12 mb-8 mr-8 ml-10 md:mx-24 flex flex-col justify-center items-center">
 
       <div>
         <h1
@@ -80,9 +80,16 @@ export default function Portfolio() {
               <img className="rounded-t-lg" src={project.images[0]} alt={`Screenshot of ${project.title}`} />
             </a>
             <div className="p-5 flex items-center flex-col">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-center">{project.title}</h5>
-              </a>
+              <h3 className="mb-2 text-2xl font-bold tracking-tight text-center">{project.title}</h3>
+              <div className="rounded-full bg-mist my-2 shadow-sm shadow-army flex flex-row items-center">
+                <a href={project.github} target='_blank' rel='noopener noreferrer' className="p-2 font-medium text-army-700 hover:text-peach-500 hover:font-semibold">
+                  GitHub
+                </a>
+                <p className="text-xl">|</p>
+                <a href={project.website} target='_blank' rel='noopener noreferrer' className="p-2 font-medium text-army-700 hover:text-peach-500 hover:font-semibold">
+                  Live Site
+                </a>
+              </div>
               <p className="mb-3 font-normal">{project.description}</p>
             </div>
           </div>
