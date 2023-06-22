@@ -54,13 +54,25 @@ const devicons = [
 
 export default function Skills() {
   return (
-    <div id='skills' className="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6 text-mist-50">
+    <div
+      id='skills'
+      className="grid grid-cols-3 gap-4 sm:grid-cols-4 sm:gap-6 text-mist-50"
+    >
       {devicons.map((devicon) => (
-        <div key={devicon.name} className="flex flex-col items-center justify-center px-2 text-4xl sm:text-6xl">
+        <div
+          key={devicon.name}
+          className="flex flex-col items-center justify-center px-2 text-4xl sm:text-6xl"
+        >
           <div className="flex flex-col items-center justify-center">
-            <i className={devicon.class} style={devicon.name === "Next.js" || devicon.name === "Django" ? {color: "#F8F8F8"} : {}}></i>
+            <i
+              className={devicon.class}
+              style={devicon.name === "Next.js" || devicon.name === "Django" ? {color: "#F8F8F8"} : {}}
+            >
+            </i>
             <div className="justify-center">
-              <p className="mx-2 mt-0 text-sm text-center text-gray-300 sm:text-xl">{devicon.name}</p>
+              <p className="mx-2 mt-0 text-sm text-center text-gray-300 sm:text-xl">
+                {devicon.name}
+              </p>
             </div>
           </div>
         </div>
