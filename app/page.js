@@ -11,10 +11,7 @@ export default function Home() {
         className="h-0 sm:h-12"
       ></div>
       <Portfolio />
-      <div
-        
-        className="h-12"
-      ></div>
+      <div className="h-12"></div>
       <About />
     </main>
   )
