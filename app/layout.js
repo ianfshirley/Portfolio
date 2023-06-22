@@ -2,6 +2,7 @@ import './globals.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer'
 import ContactLinks from './components/ContactLinks'
+import Resume from './components/Resume'
 
 
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <ContactLinks />
+        <Resume />
         <Footer />
       </body>
     </html>

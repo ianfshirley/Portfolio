@@ -67,7 +67,7 @@ export default function Portfolio() {
 
 
   return (
-    <div className="mt-12 mb-8 mr-8 ml-10 md:mx-24 flex flex-col justify-center items-center">
+    <div className="mt-12 mb-8 mr-9 ml-10 md:mx-24 flex flex-col justify-center items-center">
 
       <div>
         <h1
@@ -98,7 +98,7 @@ export default function Portfolio() {
               <div className="flex flex-wrap justify-center px-6 pt-4 pb-2">
                 {project.technologies.map((tech) => (
                   <span key={tech.name} className="inline-block p-3 m-1 font-semibold text-fog bg-mist shadow-md shadow-fog-400 rounded-full text-md sm:text-lg">
-                    <div key={tech.name} className="flex flex-col items-center justify-center px-2">
+                    <div key={tech.name} className="flex flex-col items-center justify-center">
                       <i className={`${tech.class} text-2xl sm:text-4xl`}></i>
                       <div className="justify-center">
                         <p className="mt-0">{tech.name}</p>
