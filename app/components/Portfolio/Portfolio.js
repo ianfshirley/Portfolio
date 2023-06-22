@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-// add urls (live site & github repo), year, create gif, and finish adding icons
+
 const projects = [
   {
     "title": "JobHuntHQ",
@@ -64,45 +64,61 @@ const projects = [
 ]
 
 
-
-
 export default function Portfolio() {
-
-
-
   return (
     <div className="mt-12 mb-8 mx-10 md:mx-24 flex flex-col justify-center items-center">
-
       <div>
-        <h1
-          className='p-10 text-fog text-5xl text-shadow-sm shadow-mist-50'
-        >Projects</h1>
+        <h1 className='p-10 text-fog text-5xl text-shadow-sm shadow-mist-50'>
+          Projects
+        </h1>
       </div>
-
       <div className=" bg-mist flex flex-col justify-center items-stretch md:flex-row rounded-lg">
-
         {projects.map((project) => (
-
-          <div key={project} className="flex flex-col max-w-lg bg-fog  rounded-lg shadow-lg shadow-fog-400 m-6 text-[#191919]">
-
-            <img className="rounded-t-lg" src={project.images[0]} alt={`Screenshot of ${project.title}`} />
-
+          <div
+            key={project}
+            className="flex flex-col max-w-lg bg-fog  rounded-lg shadow-lg shadow-fog-400 m-6 text-[#191919]"
+          >
+            <img
+              className="rounded-t-lg"
+              src={project.images[0]}
+              alt={`Screenshot of ${project.title}`}
+            />
             <div className="p-5 flex items-center flex-col">
-              <h3 className="mb-2 text-2xl font-bold tracking-tight text-center">{project.title}</h3>
+              <h3 className="mb-2 text-2xl font-bold tracking-tight text-center">
+                {project.title}
+              </h3>
               <div className="rounded-full bg-mist my-2 shadow-sm shadow-army flex flex-row items-center">
-                <a href={project.github} target='_blank' rel='noopener noreferrer' className="p-2 font-medium text-army-700 hover:text-peach-500 hover:font-semibold">
+                <a
+                  href={project.github}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className="p-2 font-medium text-army-700 hover:text-peach-500 hover:font-semibold"
+                >
                   GitHub
                 </a>
                 <p className="text-xl">|</p>
-                <a href={project.website} target='_blank' rel='noopener noreferrer' className="p-2 font-medium text-army-700 hover:text-peach-500 hover:font-semibold">
+                <a
+                  href={project.website}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className="p-2 font-medium text-army-700 hover:text-peach-500 hover:font-semibold"
+                >
                   Live Site
                 </a>
               </div>
-              <p className="my-3 font-medium">{project.description}</p>
+              <p className="my-3 font-medium">
+                {project.description}
+              </p>
               <div className="flex flex-wrap justify-center px-6 pt-4 pb-2">
                 {project.technologies.map((tech) => (
-                  <span key={tech.name} className="inline-block p-2 m-1 font-semibold text-mist-50 text-md sm:text-lg">
-                    <div key={tech.name} className="flex flex-col items-center justify-center">
+                  <span
+                    key={tech.name}
+                    className="inline-block p-2 m-1 font-semibold text-mist-50 text-md sm:text-lg"
+                  >
+                    <div
+                      key={tech.name}
+                      className="flex flex-col items-center justify-center"
+                    >
                       <i className={`${tech.class} text-2xl sm:text-4xl`}></i>
                       <div className="justify-center">
                         <p className="mt-0 text-sm">{tech.name}</p>
@@ -111,14 +127,10 @@ export default function Portfolio() {
                   </span>
                 ))}
               </div>
-
             </div>
           </div>
-
         ))}
-
       </div>
-
     </div>
   )
 }
