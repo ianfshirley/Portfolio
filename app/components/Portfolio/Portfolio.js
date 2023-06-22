@@ -84,9 +84,9 @@ export default function Portfolio() {
         {projects.map((project) => (
 
           <div key={project} className="flex flex-col max-w-lg bg-fog  rounded-lg shadow-lg shadow-fog-400 m-6 text-[#191919]">
-            <a href="#">
-              <img className="rounded-t-lg" src={project.images[0]} alt={`Screenshot of ${project.title}`} />
-            </a>
+
+            <img className="rounded-t-lg" src={project.images[0]} alt={`Screenshot of ${project.title}`} />
+
             <div className="p-5 flex items-center flex-col">
               <h3 className="mb-2 text-2xl font-bold tracking-tight text-center">{project.title}</h3>
               <div className="rounded-full bg-mist my-2 shadow-sm shadow-army flex flex-row items-center">
