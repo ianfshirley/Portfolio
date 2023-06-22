@@ -13,24 +13,28 @@ const projects = [
     "description": "JobHuntHQ is a web application designed to help users organize and track their job search journey in a simple, efficient, and user-friendly manner. Users can add jobs they have applied for, and update as they move through the hiring process.",
     "technologies": [
       {
-        "class": "devicon-python-plain",
+        "class": "devicon-python-plain colored",
         "name": "Python"
       },
       {
-        "class": "devicon-django-plain",
+        "class": "devicon-django-plain colored",
         "name": "Django"
       },
       {
-        "class": "devicon-javascript-plain",
+        "class": "devicon-javascript-plain colored",
         "name": "JavaScript"
       },
       {
-        "class": "devicon-nextjs-original",
+        "class": "devicon-nextjs-original colored",
         "name": "Next.js"
       },
       {
-        "class": "devicon-tailwindcss-plain",
+        "class": "devicon-tailwindcss-plain colored",
         "name": "Tailwind CSS"
+      },
+      {
+        "class": "devicon-postgresql-plain colored",
+        "name": "PostgreSQL"
       },
     ]
   },
@@ -44,15 +48,15 @@ const projects = [
     "description": "Target Practice is a retro computer game based on Nintendo's classic \"Duck Hunt\", where users try to shoot down birds that fly across the screen, and scores are tracked on the leaderboard.",
     "technologies": [
       {
-        "class": "devicon-javascript-plain",
+        "class": "devicon-javascript-plain colored",
         "name": "JavaScript"
       },
       {
-        "class": "devicon-html5-plain",
+        "class": "devicon-html5-plain colored",
         "name": "HTML"
       },
       {
-        "class": "devicon-css3-plain",
+        "class": "devicon-css3-plain colored",
         "name": "CSS"
       },
     ]
@@ -75,11 +79,11 @@ export default function Portfolio() {
         >Projects</h1>
       </div>
 
-      <div className=" bg-mist flex flex-col justify-center items-center md:flex-row rounded-lg">
+      <div className=" bg-mist flex flex-col justify-center items-stretch md:flex-row rounded-lg">
 
         {projects.map((project) => (
 
-          <div key={project} className="flex flex-col max-w-sm bg-fog  rounded-lg shadow-lg shadow-fog-400 m-6 text-[#191919]">
+          <div key={project} className="flex flex-col max-w-lg bg-fog  rounded-lg shadow-lg shadow-fog-400 m-6 text-[#191919]">
             <a href="#">
               <img className="rounded-t-lg" src={project.images[0]} alt={`Screenshot of ${project.title}`} />
             </a>
@@ -94,19 +98,20 @@ export default function Portfolio() {
                   Live Site
                 </a>
               </div>
-              <p className="mb-3 font-normal">{project.description}</p>
+              <p className="my-3 font-medium">{project.description}</p>
               <div className="flex flex-wrap justify-center px-6 pt-4 pb-2">
                 {project.technologies.map((tech) => (
-                  <span key={tech.name} className="inline-block p-3 m-1 font-semibold text-fog bg-mist shadow-md shadow-fog-400 rounded-full text-md sm:text-lg">
+                  <span key={tech.name} className="inline-block p-2 m-1 font-semibold text-mist-50 text-md sm:text-lg">
                     <div key={tech.name} className="flex flex-col items-center justify-center">
                       <i className={`${tech.class} text-2xl sm:text-4xl`}></i>
                       <div className="justify-center">
-                        <p className="mt-0">{tech.name}</p>
+                        <p className="mt-0 text-sm">{tech.name}</p>
                       </div>
                     </div>
                   </span>
                 ))}
               </div>
+
             </div>
           </div>
 
