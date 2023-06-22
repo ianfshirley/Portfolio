@@ -17,10 +17,10 @@ export default function About() {
 
         <div className="px-6 sm:px-10 mx-4  py-5 sm:-ml-2 text-justify max-w-2xl  rounded-r-lg text-mist-50 bg-army rounded-2xl">
           <p className="py-2">
-            I'm a full-stack software developer with a background in sales, customer service, and fraud investigation. I'm currently living in Seattle with my wife, our goldendoodle and our snowshoe cat (their names are Ramen & Sushi).
+            I&apos;m a full-stack software developer with a background in sales, customer service, and fraud investigation. I&apos;m currently living in Seattle with my wife, our goldendoodle and our snowshoe cat (their names are Ramen & Sushi).
           </p>
           <p className="py-2">
-            As someone who not only loves building and fixing things, but also someone who is obsessed with finding answers to the questions “how” and “why”, being a software developer is a perfect fit for me. I disagree with the phrase “if it ain’t broke, don’t try to fix it”, because I think there’s usually a way to improve on something even if it’s already working. In short, I like to find ways to maximize efficiency.
+            As someone who not only loves building and fixing things, but also someone who is obsessed with finding answers to the questions “how” and “why”, being a software developer is a perfect fit for me. I disagree with the phrase “if it ain&apos;t broke, don&apos;t try to fix it”, because I think there&apos;s usually a way to improve on something even if it&apos;s already working. In short, I like to find ways to maximize efficiency.
           </p>
           <p className="py-2">
             I am proudly neurodivergent. In my free time, I love to play sports, make art, cook and make things out of wood.    🏔️ 🛹 🏂 🚴 🏍️ 🥏 🧑‍🍳 🎨 🏀 🏕️
