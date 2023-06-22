@@ -30,13 +30,14 @@ function useScrollDirection() {
 
 
 export default function Header() {
+
   const scrollDirection = useScrollDirection();
 
   return (
     <div className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} z-20 h-24 w-screen flex flex-row justify-between transition-all duration-500 bg-[#191919]`}>
-      <h1
-        className={`pl-4 sm:pl-10 pt-10 text-peach-500 text-xl sm:text-3xl font-medium ${cinzel.className}`}  
-      >Ian F. Shirley</h1>
+      <h1 className={`pl-4 sm:pl-10 pt-10 text-peach-500 text-xl sm:text-3xl font-medium ${cinzel.className}`}>
+        Ian F. Shirley
+      </h1>
       <NavBar />
     </div>
   )
