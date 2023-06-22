@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function NavBar() {
   return (
-    <div className="p-10">
+    <div className="py-10 px-4 sm:px-10">
       <nav className="">
         <Link
           href='/'

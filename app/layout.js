@@ -5,7 +5,6 @@ import ContactLinks from './components/ContactLinks'
 import Resume from './components/Resume'
 
 
-
 export const metadata = {
   title: 'Ian F. Shirley: Full-Stack Developer',
   description: 'Developer Portfolio for Ian F. Shirley',

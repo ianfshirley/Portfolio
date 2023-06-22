@@ -71,7 +71,7 @@ export default function Portfolio() {
 
 
   return (
-    <div className="mt-12 mb-8 mr-9 ml-10 md:mx-24 flex flex-col justify-center items-center">
+    <div className="mt-12 mb-8 mx-10 md:mx-24 flex flex-col justify-center items-center">
 
       <div>
         <h1
