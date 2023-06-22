@@ -21,7 +21,6 @@ export default function Resume() {
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
       >
-
         <a 
           href='/resume/Ian_F_Shirley_Resume.pdf'
           target='_blank'
@@ -30,8 +29,6 @@ export default function Resume() {
         >
           resume
         </a>
-
-
         <div className={`h-36 w-1 bg-mist-50 mt-12 mx-auto ${isHovered ? 'bg-peach-500' : ''}`}></div>
       </nav>
     </div>
